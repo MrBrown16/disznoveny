@@ -1,0 +1,16 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Név" aria-label="Név" aria-describedby="button-addon2" [(ngModel)]="noveny.megnevezes">
+    <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2">keres</button> -->
+  </div>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Kép Url" aria-label="Kép Url" aria-describedby="button-addon2" [(ngModel)]="noveny.kepUrl">
+    <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2">keres</button> -->
+  </div>
+<div class="input-group mb-3">
+    <textarea type="text" class="form-control" placeholder="Leírás" aria-label="Leírás" aria-describedby="button-addon2" [(ngModel)]="noveny.leiras"></textarea>
+    <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2">keres</button> -->
+  </div>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Ár" aria-label="Ár" aria-describedby="button-addon2" [(ngModel)]="noveny.ar">
+</div>
+<button class="btn primary" type="button" id="button-addon2" (click)="ujNoveny()">Mentés</button>

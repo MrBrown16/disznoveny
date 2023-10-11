@@ -1,0 +1,23 @@
+<!-- {{novenyek|json}} -->
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Keresés" aria-label="Keresés" aria-describedby="button-addon2" [(ngModel)]="szo">
+    
+  </div>
+<div class="row">
+    <div *ngFor="let noveny of novenyek|filter:szo" class=" col-12 col-md-6 col-lg-4 col-xl-3">
+
+
+          
+        <div class="card h-100">
+            <img [src]="noveny.kepUrl" alt="noveny.megnevezes">
+            <div class="card-body">
+                <h5 class="card-title">{{noveny.megnevezes}}</h5>
+                <p class="card-text">{{noveny.leiras}}</p>
+            </div>
+            <button (click)="torol(noveny)" class="btn btn-outline-secondary" type="button" id="button-addon2">Töröl</button>
+            <button (click)="modosit(noveny)" class="btn btn-outline-secondary" type="button" id="button-addon2">Módosít</button>
+            <div class="card-footer">{{noveny.ar}}</div>
+        </div>
+
+    </div>
+</div>
